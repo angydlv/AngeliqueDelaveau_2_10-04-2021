@@ -1,0 +1,145 @@
+/* Définition des polices personnalisées */
+
+@font-face 
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* Header */
+
+.bloc_page {
+    margin: -8px 50px 50px 50px
+}
+
+header {
+    font-family: 'Raleway';
+    font-size: 16px ;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-weight:500;
+    cursor: pointer;
+} 
+.navigation a {
+    padding: 40px 30px 0 30px;
+}
+
+.navigation a:hover {
+    padding: 38px 30px 0 30px;
+    border-top : 2px solid #0065FC;
+}
+
+
+a:link, a:visited, a:focus {
+    background: white;
+}
+
+a:hover {
+    color: #0065FC;
+    font-weight: 500;
+}
+
+a:active {
+    color: black;
+}
+
+.logo {
+    margin: 50px 0 0 0;
+    width: 100px;
+    height: auto;
+    float:left;
+} 
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.three a {
+    color: #0065FC;
+    font-weight: 700;
+}
+
+.recherche h1 {
+    font-weight: bold;
+}
+
+/* Section recherche */
+
+.recherche {
+    padding: 0 0 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recherche h1 {
+    font-size: 22px;
+    font-weight:bold;
+    margin-bottom: -10px;
+}
+
+.recherche p {
+    font-size: 16px;
+    font-weight:500;
+}
+
+.navigation .recherche {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+    font-size: 1.2em;
+    padding : 20px 20px 20px 20px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    width: 15px;
+    height: 15px;
+}
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 25px 0 0 50px;
+
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: -38px 0 0 50px;
+    padding: 15px 0 -15px 0;
+    border-color: #F2F2F2;
+    border-style:solid;
+    padding-top: 20px;
+    width: 230px ;
+    height: 30px ;
+    font-size: 19px;
+    font-weight:700;
+}
+::placeholder {
+    color:black;
+    text-align: center;
+}
+
+/* Body */
+
+body {
+    font-family: 'Raleway';
+}
+
+
+/* Footer */
+
+
+
+/* Navigation */
+
