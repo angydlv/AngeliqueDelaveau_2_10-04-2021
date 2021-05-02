@@ -1,7 +1,6 @@
 /* Définition des polices personnalisées */
 
-@font-face 
-{
+@font-face {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -26,6 +25,7 @@ a {
     font-weight:500;
     cursor: pointer;
 } 
+
 .navigation a {
     padding: 40px 30px 0 30px;
 }
@@ -88,6 +88,7 @@ a:active {
 .recherche p {
     font-size: 16px;
     font-weight:500;
+    margin: 20px 0 0 0;
 }
 
 .navigation .recherche {
@@ -98,43 +99,363 @@ a:active {
 .fa-map-marker-alt:before {
     content: "\f3c5";
     font-size: 1.2em;
-    padding : 20px 20px 20px 20px;
+    padding : 20px ;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
     width: 15px;
     height: 15px;
 }
+
 .map {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 25px 0 0 50px;
+    margin: 40px 0 0 50px;
+    align-items: flex-start;
 
 }
+
 .search {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: -38px 0 0 50px;
-    padding: 15px 0 -15px 0;
+    align-items: flex-start;
+    margin: -39px 0 0px 54px;
+    padding: 12px;
     border-color: #F2F2F2;
     border-style:solid;
     padding-top: 20px;
     width: 230px ;
-    height: 30px ;
+    height: 23px ;
     font-size: 19px;
     font-weight:700;
 }
+
 ::placeholder {
     color:black;
+    padding: 20px 0 0 0;
+}
+
+.bouton { 
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.submit  {
+    font-family: 'Raleway';
+    margin: -39px -2px 0px 0px;
+    padding: 17px;
+    background-color: #0065FC;
+    color: white;
+    border-color:#0065FC ;
+    border-style: solid;
+    border-radius: 0 15px 15px 0;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Filtres */
+
+.categories {
+    display: flex;
+    justify-content:baseline;
+    align-items: flex-start;
+    font-family: 'Raleway';
     text-align: center;
 }
+
+.categories a {
+    font-weight: 900;
+    font-size: 17px;
+    text-align: center;
+}
+
+.filtres {
+    font-size: 18px;
+    margin-top: 33px;
+}
+
+.economique {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-radius: 30px;
+    width: 200px ;
+    height: 42px ;
+    margin: 20px;
+}
+
+.economique a {
+    margin: 15px;
+}
+
+.fa-money-bill-wave {
+    background-color:#DEEBFF;
+    padding : 17px;
+    border-radius: 90%;
+    color: #0065FC;
+    margin: 0 0 0 -2px;
+}
+
+.familial {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-radius: 30px;
+    width: 150px ;
+    height: 42px ;
+    margin: 20px 20px 20px 10px;
+}
+
+.familial a {
+    margin: 10px;
+}
+
+.fa-child {
+    background-color:#DEEBFF;
+    padding : 17px;
+    border-radius: 30px ;
+    color: #0065FC;
+}
+
+.romantique {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-radius: 30px;
+    width: 180px ;
+    height: 42px ;
+    margin: 20px;
+}
+
+.romantique a {
+    margin: 10px;
+}
+
+.fa-heart {
+    background-color:#DEEBFF;
+    padding : 17px;
+    border-radius: 30px ;
+    color: #0065FC;
+}
+
+.animaux {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-radius: 30px;
+    width: 240px ;
+    height: 42px ;
+    margin: 20px;
+}
+
+.animaux a {
+    margin: 0 0 0 10px ;
+}
+
+.fa-dog {
+    background-color:#DEEBFF;
+    padding : 17px;
+    border-radius: 30px ;
+    color: #0065FC;
+}
+
+.infos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Raleway';
+}
+
+.fa-info {
+    color:#0065FC;
+    font-size: 0.8em;
+    padding: 6px 8px 10px 8px ;
+    border-style: solid;
+    border-color:#DEEBFF ;
+    border-radius: 90%;
+    border-width: 1px;
+    height: 8px;
+    margin: 10px;
+}
+
+.txtinfos {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Hebergement et populaires */
+
+main {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.etoile {
+    font-size: 0.7em;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 10px 15px;
+}
+.etoilebleue {
+    color: #0065FC;
+}
+
+.etoilegrise {
+    color:#F2F2F2;
+}
+
+/*hebergement*/
+
+.hebergement img {
+    border-width: 4px;
+    border-radius: 30px 30px 0 0 ;
+    border-style: solid;
+    border-color: white;
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+    margin: 0 0 -15px 0;
+}
+
+.hebergement {
+    background-color: #F2F2F2;
+    border-radius: 30px ;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway';
+    padding: 30px 30px 0 30px;
+    margin: 0 20px 0 0;
+}
+
+.hebergement h1 {
+    font-size: 22px;
+    font-weight:900;
+    margin: 20px 20px 20px 0;
+}
+.hebergement h5 a{
+    font-size: 14px;
+    font-weight:bold;
+    padding: 0 0 0 15px;
+}
+.hebergement p {
+    margin: -10px 0 10px 15px;
+
+}
+.afficher a {
+    background-color: #F2F2F2;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/*Premiere ligne*/
+
+.ligne1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+.hebcannebiere {
+    width: 206px ;
+    background-color: white;
+    border-radius: 30px;
+    margin: 0 30px 30px 0;
+}
+
+.hebhotelport {
+    width: 206px ;
+    background-color: white;
+    border-radius: 30px;
+    margin: 0 30px 30px 0;
+}
+.hebhotelmouettes {
+    width: 206px ;
+    background-color: white;
+    border-radius: 30px;
+    margin: 0 0 30px 0;
+}
+
+/* 2eme ligne */
+
+.ligne2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 20px ;
+
+}
+.hebhotelmer {
+    width: 206px ;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.hebaubergepanier {
+    width: 206px ;
+    background-color: white;
+    border-radius: 30px;
+}
+.hebhotelamina {
+    width: 206px ;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/*Populaires*/
+
+.populaires img {
+    
+    border-radius: 30px 0 0 30px ;
+    border-style: solid;
+    border-color: white;
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+}
+
+.populaires {
+    background-color: #F2F2F2;
+    border-radius: 30px ;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway';
+}
+
+.hsoleil {
+    display: flex;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 500;
+    margin : 10px ;
+}
+
+
 
 /* Body */
 
 body {
     font-family: 'Raleway';
 }
+
 
 
 /* Footer */
