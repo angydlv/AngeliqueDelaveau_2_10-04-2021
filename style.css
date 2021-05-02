@@ -1,6 +1,7 @@
 /* Définition des polices personnalisées */
 
-@font-face {
+@font-face 
+{
     font-family: 'Raleway', sans-serif;
 }
 
@@ -9,7 +10,7 @@
 /* Header */
 
 .bloc_page {
-    margin: -8px 50px 50px 50px
+    margin: 0 50px 50px 50px;
 }
 
 header {
@@ -25,7 +26,6 @@ a {
     font-weight:500;
     cursor: pointer;
 } 
-
 .navigation a {
     padding: 40px 30px 0 30px;
 }
@@ -71,6 +71,13 @@ a:active {
     font-weight: bold;
 }
 
+/* Body */
+
+.body {
+    font-family: 'Raleway';
+    width: auto;
+}
+
 /* Section recherche */
 
 .recherche {
@@ -88,12 +95,6 @@ a:active {
 .recherche p {
     font-size: 16px;
     font-weight:500;
-    margin: 20px 0 0 0;
-}
-
-.navigation .recherche {
-    display: flex;
-    flex-direction: column;
 }
 
 .fa-map-marker-alt:before {
@@ -102,8 +103,6 @@ a:active {
     padding : 20px ;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
-    width: 15px;
-    height: 15px;
 }
 
 .map {
@@ -114,35 +113,31 @@ a:active {
     align-items: flex-start;
 
 }
-
 .search {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     margin: -39px 0 0px 54px;
-    padding: 12px;
+    padding: 16px;
     border-color: #F2F2F2;
     border-style:solid;
-    padding-top: 20px;
     width: 230px ;
     height: 23px ;
     font-size: 19px;
     font-weight:700;
 }
-
 ::placeholder {
     color:black;
     padding: 20px 0 0 0;
 }
-
-.bouton { 
+.bouton
+{ 
     display: flex;
     justify-content:flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
 }
-
 .submit  {
     font-family: 'Raleway';
     margin: -39px -2px 0px 0px;
@@ -159,7 +154,8 @@ a:active {
 
 /* Filtres */
 
-.categories {
+.categories
+{
     display: flex;
     justify-content:baseline;
     align-items: flex-start;
@@ -301,32 +297,34 @@ main {
     display:flex;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
 }
+
+.fa-star {
+    font-size: 0.8em;
+}
+
 .etoile {
-    font-size: 0.7em;
     display: flex;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding: 0 0 10px 15px;
+    color: #F2F2F2;
+    margin: 20px 0 15px 15px;
 }
 .etoilebleue {
     color: #0065FC;
 }
 
-.etoilegrise {
-    color:#F2F2F2;
-}
-
 /*hebergement*/
 
 .hebergement img {
-    border-width: 4px;
     border-radius: 30px 30px 0 0 ;
     border-style: solid;
     border-color: white;
     object-fit: cover;
     width: 200px;
     height: 100px;
-    margin: 0 0 -15px 0;
+    margin: 0 0 -20px 0;
 }
 
 .hebergement {
@@ -337,30 +335,28 @@ main {
     display: flex;
     flex-direction: column;
     font-family: 'Raleway';
-    padding: 30px 30px 0 30px;
-    margin: 0 20px 0 0;
+    padding: 30px;
+    margin : 0 20px 0 0;
 }
 
-.hebergement h1 {
-    font-size: 22px;
-    font-weight:900;
-    margin: 20px 20px 20px 0;
-}
 .hebergement h5 a{
     font-size: 14px;
-    font-weight:bold;
-    padding: 0 0 0 15px;
+    font-weight:900;
+    margin : 0 0 0 15px;
+    padding: 0 0 0 0;
 }
 .hebergement p {
-    margin: -10px 0 10px 15px;
-
+    margin: -15px 0 -15px 15px;
+    padding: 0 0 0 0;
 }
 .afficher a {
     background-color: #F2F2F2;
-    font-size: 15px;
     font-weight: bold;
-    margin: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
+
 
 /*Premiere ligne*/
 
@@ -373,21 +369,24 @@ main {
 .hebcannebiere {
     width: 206px ;
     background-color: white;
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
-    margin: 0 30px 30px 0;
+    margin : 20px 30px 20px 0;
 }
 
 .hebhotelport {
     width: 206px ;
     background-color: white;
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
-    margin: 0 30px 30px 0;
+    margin : 20px 30px 20px 0;
 }
 .hebhotelmouettes {
     width: 206px ;
     background-color: white;
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
-    margin: 0 0 30px 0;
+    margin : 20px 30px 20px 0;
 }
 
 /* 2eme ligne */
@@ -402,18 +401,24 @@ main {
 .hebhotelmer {
     width: 206px ;
     background-color: white;
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
+    margin : 20px 30px 20px 0;
 }
 
 .hebaubergepanier {
     width: 206px ;
     background-color: white;
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
+    margin : 20px 30px 20px 0;
 }
 .hebhotelamina {
     width: 206px ;
     background-color: white;
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
+    margin : 20px 30px 20px 0;
 }
 
 /*Populaires*/
@@ -424,12 +429,14 @@ main {
     border-style: solid;
     border-color: white;
     object-fit: cover;
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 .populaires {
     background-color: #F2F2F2;
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 0 20px;
     border-radius: 30px ;
     width: 70%;
     height: 30%;
@@ -437,29 +444,158 @@ main {
     flex-direction: column;
     font-family: 'Raleway';
 }
+.populaires h5 a {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 0 0 15px;
+}
+.populaires h1 {
+    padding: 0 0 0 20px;
+    font-size: 24px;
+}
+.populaires p {
+    margin: -10px 0 50px 15px;
+}
+.popu {
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
 
 .hsoleil {
     display: flex;
+    margin: 15px;
+    padding: 0 15px 0 0;
+    background-color: white ;
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
+    border-radius: 30px;
 }
 
 p {
     font-size: 12px;
     font-weight: 500;
-    margin : 10px ;
+}
+
+/* Activites*/
+
+.activites {
+    font-family: "Raleway";
+}
+.activites h5 a {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 20px 20px ;
+}
+
+.activitesimg {
+    display: flex;
+    align-items: flex-start;
+}
+.activitesimg img {
+    object-fit: cover;
+    width: 300px;
+    border-radius: 30px 30px 0 0;
+}
+
+.tactivite {
+    background-color: white;
+    font-family: "Raleway";
+    margin: 50px 0 50px 0;
+}
+
+.vieuxport {
+    object-fit: cover;
+    height: 400px;
+}
+
+.vport {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 0 20px 20px 0;
+}
+.vport h5 a {
+    margin: 0 0 0 20px;
+}
+
+.parccalanques {
+    object-fit: cover;
+    height: 400px;
+}
+.pcalanques h5 a {
+    margin: 0 0 0 20px;
+}
+
+.fortpomegues {
+    object-fit: cover;
+    height: 180px; 
+}
+
+.fpomegues {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 0 20px 20px 20px;
+}
+
+.ilesfrioul {
+    object-fit: cover;
+    height: 120px;
+}
+
+.ifrioul {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 40px 20px 30px 20px;
+}
+
+.pcalanques {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 0 20px 20px 20px;
+}
+.notredamegarde {
+    height: 150px;
+}
+.ndgarde {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 0 20px 20px 20px;
+}
+.parclongchamp {
+    height: 150px;
+}
+.plongchamp {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 40px 20px 20px 20px;
 }
 
 
-
-/* Body */
-
-body {
-    font-family: 'Raleway';
-}
 
 
 
 /* Footer */
+footer {
+    font-family: "Raleway";
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.apropos {
+    margin: 20px 200px 20px 50px;
+}
 
+.noshebergements {
+    margin : 20px 200px 20px 0 ;
+}
+
+.assistance {
+    margin : 20px 200px 20px 0;
+}
+.basdepage p a {
+    background-color: #F2F2F2;
+}
 
 
 /* Navigation */
