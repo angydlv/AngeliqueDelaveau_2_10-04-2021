@@ -1,0 +1,193 @@
+/* Définition des polices personnalisées */
+
+@font-face 
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.mes-blocks div {
+    min-width: 300px;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .mes-blocks div {
+        min-width: 450px;
+    }
+}
+
+@media screen and (min-width: 1440px)
+{
+    .bloc_page {
+        width: 1440px;
+        margin: auto;
+    }
+}
+
+
+
+/* Activites*/
+
+.activites {
+    font-family: "Raleway";
+}
+.activites h5 a {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 20px 20px ;
+}
+
+.activitesimg {
+    display: flex;
+    align-items: flex-start;
+}
+.activitesimg img {
+    object-fit: cover;
+    width: 300px;
+    border-radius: 30px 30px 0 0;
+}
+
+.tactivite {
+    background-color: white;
+    font-family: "Raleway";
+    margin: 50px 0 50px 0;
+}
+
+.vieuxport {
+    object-fit: cover;
+    height: 400px;
+}
+
+.vport {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 0 20px 20px 0;
+}
+.vport h5 a {
+    margin: 0 0 0 20px;
+}
+
+.parccalanques {
+    object-fit: cover;
+    height: 400px;
+}
+.pcalanques h5 a {
+    margin: 0 0 0 20px;
+}
+
+.fortpomegues {
+    object-fit: cover;
+    height: 180px; 
+}
+
+.fpomegues {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 0 20px 20px 20px;
+}
+
+.ilesfrioul {
+    object-fit: cover;
+    height: 120px;
+}
+
+.ifrioul {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 40px 20px 30px 20px;
+}
+
+.pcalanques {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 0 20px 20px 20px;
+}
+.notredamegarde {
+    height: 150px;
+}
+.ndgarde {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 0 20px 20px 20px;
+}
+.parclongchamp {
+    height: 150px;
+}
+.plongchamp {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px ;
+    margin: 40px 20px 20px 20px;
+}
+
+
+
+/* Header */
+
+
+header {
+    font-family: 'Raleway';
+    font-size: 16px ;
+}
+body {
+    font-family: "Raleway";
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-weight:500;
+    cursor: pointer;
+} 
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* margin: 40px 0 0 50px; */
+    align-items: flex-start;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #F2F2F2;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content p a {
+    font-size: 14px;
+}
+
+/* 
+.apropos {
+    margin: 20px 200px 20px 50px;
+}
+
+.noshebergements {
+    margin : 20px 200px 20px 0 ;
+}
+
+.assistance {
+    margin : 20px 200px 20px 0;
+} */
+
+.basdepage p a {
+    background-color: #F2F2F2;
+}
+
+
