@@ -1,0 +1,23 @@
+@media screen and (max-width: 1024px)
+{
+    .bloc_page 
+    {
+        width: auto;
+        
+    }
+    .navigation {
+        
+            display: block;
+            flex-direction: column;
+            justify-content: flex-start;
+            font-size: 22px;
+        }
+        .logo {
+            width: 150px;
+        }
+        .hautdepage {
+            display: flex;
+            flex-direction: column;
+        }
+
+}

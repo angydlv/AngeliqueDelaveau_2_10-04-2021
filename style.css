@@ -10,14 +10,18 @@
 /* Header */
 
 .bloc_page {
-    margin: 0 50px 50px 50px;
+        width: 1440px;
+        height: auto;
+        margin: auto;
 }
 
 header {
     font-family: 'Raleway';
     font-size: 16px ;
 }
-
+body {
+    font-family: "Raleway";
+}
 
 a {
     text-decoration: none;
@@ -26,13 +30,25 @@ a {
     font-weight:500;
     cursor: pointer;
 } 
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.boutons {
+    display: flex;
+}
+.boutons :hover {
+    border-top : 1px solid #0065FC;
+}
+
 .navigation a {
     padding: 40px 30px 0 30px;
 }
 
 .navigation a:hover {
     padding: 38px 30px 0 30px;
-    border-top : 2px solid #0065FC;
 }
 
 
@@ -50,7 +66,7 @@ a:active {
 }
 
 .logo {
-    margin: 50px 0 0 0;
+    margin: 50px 0 20px 50px;
     width: 100px;
     height: auto;
     float:left;
@@ -71,12 +87,6 @@ a:active {
     font-weight: bold;
 }
 
-/* Body */
-
-.body {
-    font-family: 'Raleway';
-    width: auto;
-}
 
 /* Section recherche */
 
@@ -322,8 +332,8 @@ main {
     border-style: solid;
     border-color: white;
     object-fit: cover;
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 120px;
     margin: 0 0 -20px 0;
 }
 
@@ -353,8 +363,6 @@ main {
     background-color: #F2F2F2;
     font-weight: bold;
     font-size: 15px;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 
@@ -367,26 +375,26 @@ main {
 
 }
 .hebcannebiere {
-    width: 206px ;
+    width: 256px ;
     background-color: white;
     box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
-    margin : 20px 30px 20px 0;
+    margin : 20px 20px 20px 0;
 }
 
 .hebhotelport {
-    width: 206px ;
+    width: 256px ;
     background-color: white;
     box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
-    margin : 20px 30px 20px 0;
+    margin : 20px 20px 20px 0;
 }
 .hebhotelmouettes {
-    width: 206px ;
+    width: 256px ;
     background-color: white;
     box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
-    margin : 20px 30px 20px 0;
+    margin : 20px 20px 20px 0;
 }
 
 /* 2eme ligne */
@@ -399,26 +407,26 @@ main {
 
 }
 .hebhotelmer {
-    width: 206px ;
+    width: 256px ;
     background-color: white;
     box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
-    margin : 20px 30px 20px 0;
+    margin : 20px 20px 20px 0;
 }
 
 .hebaubergepanier {
-    width: 206px ;
+    width: 256px ;
     background-color: white;
     box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
-    margin : 20px 30px 20px 0;
+    margin : 20px 20px 20px 0;
 }
 .hebhotelamina {
-    width: 206px ;
+    width: 256px ;
     background-color: white;
     box-shadow: 5px 5px 5px rgb(224, 224, 224);
     border-radius: 30px;
-    margin : 20px 30px 20px 0;
+    margin : 20px 20px 20px 0;
 }
 
 /*Populaires*/
@@ -439,6 +447,7 @@ main {
     margin: 0 0 0 20px;
     border-radius: 30px ;
     width: 70%;
+    max-width: 350px;
     height: 30%;
     display: flex;
     flex-direction: column;
@@ -461,7 +470,11 @@ main {
     align-items: baseline;
     justify-content: space-between;
 }
-
+.hotelbleublanc {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
 .hsoleil {
     display: flex;
     margin: 15px;
@@ -482,7 +495,7 @@ p {
     font-family: "Raleway";
 }
 .activites h5 a {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     margin: 0 0 20px 20px ;
 }
@@ -577,10 +590,13 @@ p {
 footer {
     font-family: "Raleway";
     background-color: #F2F2F2;
-    width: 100%;
+    width:auto;
+    margin: 20px 0 0 0;
     display: flex;
     justify-content: flex-start;
-    margin-top: 20px;
+}
+footer p a {
+    font-size: 14px;
 }
 .apropos {
     margin: 20px 200px 20px 50px;
@@ -597,6 +613,4 @@ footer {
     background-color: #F2F2F2;
 }
 
-
-/* Navigation */
 
