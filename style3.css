@@ -1,0 +1,696 @@
+
+/* Définition des polices personnalisées */
+@font-face
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+/*Bloc Page*/
+body
+{
+	font-family: "Raleway";
+    display: flex;
+}
+
+.page
+{
+	align-items: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+
+
+/* Link */
+a:link, a:visited, a:focus
+{
+	background: white;
+}
+
+a:hover
+{
+	color: #0065FC;
+	font-weight: 500;
+}
+
+a:active
+{
+	color: black;
+}
+
+a
+{
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+	font-weight:500;
+	cursor: pointer;
+}
+
+/*Header*/
+.navigation
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo
+{
+	width: 100px;
+	height: auto;
+	float:left;
+	margin-top: 20px;
+}
+
+.box
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+/* boutons hebergement et activites*/
+.boutons
+{
+	display: flex;
+}
+
+.boutons :hover
+{
+	border-top : 1px solid #0065FC;
+}
+
+.navigation a
+{
+	padding: 40px 30px 0 30px;
+}
+
+.navigation a:hover
+{
+	padding: 38px 30px 0 30px;
+}
+
+/* bouton s'incrire */
+.bouton2
+{
+	color: #0065FC;
+	font-weight: 700;
+}
+
+.bouton2 a
+{
+	color: #0065FC;
+	font-weight: 700;
+}
+
+.bouton2 a:hover
+{
+	padding: 40px 30px 0 30px;
+}
+
+/*Recherche*/
+
+.recherche h1
+{
+	font-size: 22px;
+}
+
+.map
+{
+	display:flex;
+}
+
+form {
+    display: flex;
+}
+
+.fa-map-marker-alt
+{
+	margin-top: 20px;
+}
+
+.fa-map-marker-alt:before
+{
+	font-size: 1em;
+	padding : 18px ;
+	background-color: #F2F2F2;
+	border-radius: 15px 0 0 15px;
+}
+
+.search
+{
+	display: flex;
+	justify-content: baseline;
+	border-color: #F2F2F2;
+	border-style:solid;
+	width: 230px ;
+	height: 22px ;
+	font-size: 18px;
+	font-weight:700;
+	padding: 13px;
+	margin-top: 2px;
+}
+
+::placeholder
+{
+	color:black;
+}
+
+.submit
+{
+	font-family: 'Raleway';
+	background-color: #0065FC;
+	color: white;
+	border-color:#0065FC ;
+	border-style: solid;
+	border-radius: 0 15px 15px 0;
+	font-size: 15px;
+	font-weight: 500;
+	margin-top: 2px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* Filtres */
+.categories
+{
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.selection
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-style: solid;
+	border-color: #F2F2F2;
+	border-radius: 30px;
+	height: 44px ;
+	margin: 20px 10px 10px 20px ;
+}
+
+.eco
+{
+	width: 180px;
+}
+
+.fam
+{
+	width: 130px;
+}
+
+.rom
+{
+	width: 170px;
+}
+
+.ani
+{
+	width: 220px;
+}
+
+.selection h5 a
+{
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.iconefiltre
+{
+	background-color:#DEEBFF;
+	padding : 15px;
+	border-radius: 90px;
+	color: #0065FC;
+	margin-left: -2px;
+	font-size: 1.2em;
+}
+
+.filtres
+{
+	font-size: 16px;
+	padding-top: 10px;
+}
+
+/*Infos*/
+.fa-info
+{
+	color:#0065FC;
+	font-size: 0.7em;
+	text-align: center;
+	padding: 6px ;
+	border-style: solid;
+	border-color:#DEEBFF ;
+	border-radius: 90%;
+	border-width: 1px;
+	width: 10px;
+}
+
+.infos
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.txtinfos
+{
+	font-size: 14px;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+/*Hebergements et Populaires*/
+
+main
+{
+	display:flex;
+	justify-content:space-between;
+}
+
+
+main h5 a
+{
+	font-size: 15px;
+	font-weight:bold;
+	margin-left : 15px;
+}
+
+main h5 a:hover
+{
+	font-weight: bold;
+}
+
+main p
+{
+	font-size: 14px;
+	margin: -15px 0 -15px 15px;
+}
+
+.fa-star
+{
+	font-size: 0.8em;
+}
+
+.etoile
+{
+	display: flex;
+	justify-content: flex-start;
+	color: #F2F2F2;
+	margin: 20px 0 15px 15px;
+	padding-bottom: 10px;
+}
+
+.etoilebleue
+{
+	color: #0065FC;
+}
+
+/*Hebergements*/
+.hebergement img
+{
+	border-radius: 30px 30px 0 0 ;
+	object-fit: cover;
+    width: 300px;
+    height: 100px;
+	margin-bottom: -15px;
+}
+
+.hebergement
+{
+	background-color: #F2F2F2;
+	border-radius: 30px ;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	margin : 0 20px 0 0;
+}
+
+.heb
+{
+    height: 200px;
+	background-color: white;
+	box-shadow: 5px 5px 5px rgb(224, 224, 224);
+    border: solid;
+    border-color: white;
+    border-width: 4px;
+	border-radius: 30px;
+	margin : 20px 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hebimg {
+    width: 200px;
+}
+
+
+.ligne1
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.ligne2
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.afficher a
+{
+	background-color: #F2F2F2;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/*Populaires*/
+.populaires
+{
+	background-color: #F2F2F2;
+	padding: 20px;
+	margin-left: 20px;
+	border-radius: 30px ;
+	display: flex;
+	flex-direction: column;
+}
+
+.populaires img
+{
+	border-radius: 30px 0 0 30px ;
+	border-style: solid;
+	border-color: white;
+	border-width: 4px;
+	object-fit: cover;
+	width: 150px;
+	height: 150px;
+}
+
+.boxpopu
+{
+	display: flex;
+	margin: 15px;
+	padding-right: 15px;
+    background-color: white ;
+	box-shadow: 5px 5px 5px rgb(224, 224, 224);
+	border-radius: 30px;
+    height: 158px;
+}
+
+.popu
+{
+	display:flex;
+	align-items:baseline;
+	justify-content: space-between;
+}
+
+/*Activites*/
+
+.activitesimg {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px ;
+    flex-wrap: wrap;
+}
+.activites img {
+    object-fit: cover;
+    width: 280px;
+	border-radius: 30px 30px 0 0;
+}
+.txtact {
+    box-shadow: 0px 0px 15px rgb(224, 224, 224);
+    border-radius: 30px;
+}
+.tactivite {
+    font-size: 24px;
+    padding: 50px 0 20px 0;
+}
+.txtact h5 a
+{
+	margin-left: 20px;
+	font-weight: bold;
+    font-size: 14px;
+}
+
+.petiteimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/*tailles images*/
+.vieuxport
+{
+	height: 400px;
+}
+
+.parccalanques
+{
+	height: 400px;
+}
+
+.fortpomegues
+{
+	height: 180px;
+}
+
+.ilesfrioul
+{
+	height: 120px;
+}
+
+.notredamegarde
+{
+	height: 150px;
+}
+
+.parclongchamp
+{
+	height: 150px;
+} 
+
+
+/* .activitesimg {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: ;
+    
+}  
+.activites img
+{
+	object-fit: cover;
+	border-radius: 30px 30px 0 0;
+	width: ;
+
+}
+.activitesimg img {
+    width: 40%;
+}
+/*
+.txtact
+{
+	border-radius: 30px ;
+    width: ;
+    
+    
+}
+
+.txtact h5 a
+{
+	margin-left: 20px;
+	font-weight: bold;
+}
+/*
+.ajust h5 a
+{
+	margin-bottom: 20px;
+}
+
+.ajustplus {
+    margin-right:0;
+}
+
+.tactivite
+{
+	margin: 50px 0 30px 0;
+} /*
+
+
+
+
+/* Footer */
+footer
+{
+	background-color: #F2F2F2;
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+.footer-content
+{
+	display: flex;
+	justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content p a
+{
+	font-size: 14px;
+}
+
+.basdepage p a
+{
+	background-color: #F2F2F2;
+}
+
+
+@media screen and (max-width: 1196px)
+{
+
+}
+
+@media screen and (max-width: 1200px)
+{
+    body {
+        max-width: 100%;
+    }
+
+    .ligne1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+
+    .hebergement {
+	width: 100%;
+    display: flex;
+    }
+
+    .ligne2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heb{
+	    width: 100% ;
+        display: flex;
+        flex-direction: row;
+    } 
+    .heb p {
+        margin-top: 20px;
+        padding: 0;
+        
+    }
+    .hebergement {
+	background-color: #F2F2F2;
+	border-radius: 30px ;
+	width: 80%;
+    margin: 20px auto 20px auto;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+.hebergement img {
+    border-radius: 30px 0 0 30px;
+    object-fit: cover;
+    width: 50%;
+    height: 200px;
+    margin-bottom: -15px;
+}
+    main{
+	    display:flex;
+	    justify-content:space-between;
+        flex-wrap: wrap-reverse;
+        }
+    .txthebmedia a {
+        margin-left: 20px;
+        font-size: 22px;
+    }
+    .txthebmedia p {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .fa-star {
+        font-size: 1.2em;
+    }
+    .etoile {
+        margin: 20px;
+        padding-top: 20px;
+    }
+    
+    .populaires
+{
+	background-color: #F2F2F2;
+	padding: 20px;
+	margin-left: 20px;
+	border-radius: 30px ;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+}
+.boxlespluspopu {
+    display: flex;
+    flex-direction: row;
+}
+.populaires img
+{
+	border-radius: 30px 30px 0 0 ;
+	border-style: solid;
+	border-color: white;
+	border-width: 4px;
+	object-fit: cover;
+	width: 200px;
+	height: 100px;
+}
+
+.boxpopu
+{
+	display: flex;
+    flex-direction: column;
+	margin: 15px;
+	padding-right: 15px;
+    background-color: white ;
+	box-shadow: 5px 5px 5px rgb(224, 224, 224);
+	border-radius: 30px;
+    height: 158px;
+}
+
+.popu
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+

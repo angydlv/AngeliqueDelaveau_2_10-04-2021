@@ -26,7 +26,6 @@
 }
 
 
-
 /* Activites*/
 
 .activites {
@@ -188,6 +187,9 @@ footer {
 
 .basdepage p a {
     background-color: #F2F2F2;
+}
+.basdepage {
+    width: 1600px;
 }
 
 

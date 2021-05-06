@@ -19,6 +19,7 @@ header {
     font-family: 'Raleway';
     font-size: 16px ;
 }
+
 body {
     font-family: "Raleway";
 }
@@ -33,7 +34,6 @@ a {
 
 .navigation {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 .boutons {
@@ -66,7 +66,7 @@ a:active {
 }
 
 .logo {
-    margin: 50px 0 20px 50px;
+    margin: ;
     width: 100px;
     height: auto;
     float:left;
@@ -465,6 +465,12 @@ main {
 .populaires p {
     margin: -10px 0 50px 15px;
 }
+
+
+
+
+
+
 .popu {
     display:flex;
     align-items: baseline;
