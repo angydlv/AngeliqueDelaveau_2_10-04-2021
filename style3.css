@@ -10,11 +10,12 @@ body
 {
 	font-family: "Raleway";
     display: flex;
+    flex-direction: column;
+	margin: 0;
 }
 
 .page
 {
-	align-items: center;
     max-width: 100%;
     margin: auto;
 }
@@ -22,6 +23,7 @@ body
 
 
 /* Link */
+
 a:link, a:visited, a:focus
 {
 	background: white;
@@ -47,27 +49,63 @@ a
 	cursor: pointer;
 }
 
+
 /*Header*/
-.navigation
-{
+
+
+header {
+	max-width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	font-size: 18px;
 }
 
-.logo
-{
-	width: 100px;
-	height: auto;
-	float:left;
-	margin-top: 20px;
-}
+.logo {
+    margin: 20px 0;
+    width: 100px;
+    height: auto;
+    float:left;
+} 
 
-.box
-{
+
+.menu {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap-reverse;
 	justify-content: flex-end;
 }
+
+.menu nav {
+	display: flex;
+}
+
+.menu li {
+	margin: 0 20px ;
+}
+
+.menu a {
+	margin: 20px ;
+}
+
+nav ul {
+	display: flex;
+}
+
+ul {
+	margin: 0;
+    list-style-type: none;
+}
+
+.sinscrire a {
+	color: #0065FC;
+	font-weight: bold;
+}
+
+.menu li:hover {
+    border-top : 1px solid #0065FC;
+}
+
+
 
 /* boutons hebergement et activites*/
 .boutons
@@ -309,6 +347,7 @@ main p
 }
 
 /*Hebergements*/
+
 .hebergement img
 {
 	border-radius: 30px 30px 0 0 ;
@@ -323,10 +362,17 @@ main p
 	background-color: #F2F2F2;
 	border-radius: 30px ;
 	width: 80%;
+    max-width: 1000px;
 	display: flex;
-	flex-direction: column;
+    flex-wrap: wrap;
 	padding: 30px;
-	margin : 0 20px 0 0;
+}
+
+.hebb {
+    
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .heb
@@ -338,9 +384,9 @@ main p
     border-color: white;
     border-width: 4px;
 	border-radius: 30px;
-	margin : 20px 20px 20px 0;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 
@@ -349,17 +395,6 @@ main p
 }
 
 
-.ligne1
-{
-	display: flex;
-	justify-content: space-around;
-}
-
-.ligne2
-{
-	display: flex;
-	justify-content: space-around;
-}
 
 .afficher a
 {
@@ -368,54 +403,44 @@ main p
 	font-size: 15px;
 }
 
-/*Populaires*/
-.populaires
-{
-	background-color: #F2F2F2;
-	padding: 20px;
-	margin-left: 20px;
-	border-radius: 30px ;
-	display: flex;
-	flex-direction: column;
+/*populairev2*/
+
+aside {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    margin : 0 30px 0 30px;
 }
-
-.populaires img
-{
-	border-radius: 30px 0 0 30px ;
-	border-style: solid;
-	border-color: white;
-	border-width: 4px;
-	object-fit: cover;
-	width: 150px;
-	height: 150px;
-}
-
-.boxpopu
-{
-	display: flex;
-	margin: 15px;
-	padding-right: 15px;
-    background-color: white ;
-	box-shadow: 5px 5px 5px rgb(224, 224, 224);
-	border-radius: 30px;
-    height: 158px;
-}
-
-.popu
-{
-	display:flex;
-	align-items:baseline;
-	justify-content: space-between;
-}
-
-/*Activites*/
-
-.activitesimg {
+.popu {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px ;
-    flex-wrap: wrap;
+    margin: 30px;
 }
+.pop {
+    background-color: white;
+    display: flex;
+    border-radius: 30px;
+    margin: 30px;
+}
+.pop img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px 0 0 30px;
+    border: 4px solid white;
+}
+.pop a {
+    max-width: 250px;
+}
+
+
+
+
+.activitesimg {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
 .activites img {
     object-fit: cover;
     width: 280px;
@@ -425,17 +450,12 @@ main p
     box-shadow: 0px 0px 15px rgb(224, 224, 224);
     border-radius: 30px;
 }
-.tactivite {
-    font-size: 24px;
-    padding: 50px 0 20px 0;
-}
 .txtact h5 a
 {
 	margin-left: 20px;
 	font-weight: bold;
     font-size: 14px;
 }
-
 .petiteimg {
     display: flex;
     flex-direction: column;
@@ -443,8 +463,6 @@ main p
     flex-wrap: wrap;
 }
 
-
-/*tailles images*/
 .vieuxport
 {
 	height: 400px;
@@ -476,54 +494,6 @@ main p
 } 
 
 
-/* .activitesimg {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: ;
-    
-}  
-.activites img
-{
-	object-fit: cover;
-	border-radius: 30px 30px 0 0;
-	width: ;
-
-}
-.activitesimg img {
-    width: 40%;
-}
-/*
-.txtact
-{
-	border-radius: 30px ;
-    width: ;
-    
-    
-}
-
-.txtact h5 a
-{
-	margin-left: 20px;
-	font-weight: bold;
-}
-/*
-.ajust h5 a
-{
-	margin-bottom: 20px;
-}
-
-.ajustplus {
-    margin-right:0;
-}
-
-.tactivite
-{
-	margin: 50px 0 30px 0;
-} /*
-
-
-
 
 /* Footer */
 footer
@@ -551,12 +521,158 @@ footer
 }
 
 
-@media screen and (max-width: 1196px)
-{
 
+
+
+
+
+/*
+@media all and  (max-width: 1024px)
+{}
+        .hebergement{
+            max-width: 1024px;
+			margin: auto;
+        }
+
+        .popu {
+            display: flex;
+			flex-direction: row;
+            justify-content: space-between;
+            margin: 30px;
+        }
+        .pop {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+            margin-top: 0;
+        }
+        .pop img {
+            object-fit: cover;
+            width: 300px;
+            height: 100px;
+            border-radius: 30px 30px 0 0;
+            border: 4px solid white;
+        }
+        .boxpopu {
+            display: flex;
+			justify-content: space-around;
+        }
+		
+		
+        
+        
+}*/
+
+
+
+/*
+@media all (min-width: 1024px)
+{
+	body {
+		width: 1000px;
+		margin: auto;
+	}
+	main {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 980px;
+	}
+	aside {
+		padding: 30px;
+		margin: 0 0 30px 0;
+	}
+	.boxlespluspopu {
+		display: flex;
+		justify-content: space-around;
+	}
+	.boxpopu {
+		margin: 0;
+	}
+	.popu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0;
+	}
+	.pop {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		border-radius: 30px;
+		margin-top: 0;
+	}
+	.pop img {
+		object-fit: cover;
+		width: 200px;
+		height: 100px;
+		border-radius: 30px 30px 0 0;
+		border: 4px solid white;
+	}
+	.pop h5 {
+		max-width: 150px;
+		margin-top: 0;
+	}
+	.hebergement {
+		max-width: none;
+	}
+	.hebergement img {
+		width: 250px;
+	}
+	.activitesimg {
+		justify-content:space-around;
+	}
+	.activitesimg img {
+		width: 380px;
+	}
+	.txtact {
+		margin-bottom: 40px;
+	}
+	
 }
 
-@media screen and (max-width: 1200px)
+
+
+
+@media all and  (max-width:768px)
+{
+    body {
+		width: 768px;
+		margin: auto;
+	}
+	main {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 768px;
+	}
+	aside {
+		padding: 30px;
+		margin: 0 0 30px 0;
+		width: 768px;
+	}
+	.boxlespluspopu {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+@media all and  (max-width:600px)
+
+{
+	body {
+		color: red;
+	}
+}
+
+
+
+
+
+
+
+
+/*
+@media  screen and (max-width: 1200px)
 {
     body {
         max-width: 100%;

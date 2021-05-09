@@ -130,6 +130,40 @@
 
 /* Header */
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.navigationmobile {
+    display: flex;
+}
+nav {
+    display: flex;
+    padding-right: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0;
+    margin-right: 2vw;
+}
+nav ul li {
+    border-top: solid 2.5px transparent;
+    padding: 38px 30px 0 30px;
+}
+    li {
+    
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+
+
+
+
+
+
+
 
 header {
     font-family: 'Raleway';
