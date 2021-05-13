@@ -5,22 +5,32 @@
 	font-family: 'Raleway', sans-serif;
 }
 
-/*Bloc Page*/
+html {
+	width: 100%;
+
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	margin: auto;
+	max-width: 100%;
+}
+
+
+/*Bloc Page*
 body
 {
 	font-family: "Raleway";
     display: flex;
     flex-direction: column;
 	margin: 0;
+	width: 1440px;
 }
 
 .page
 {
-    max-width: 100%;
-    margin: auto;
+    width: 1440px;
 }
-
-
 
 /* Link */
 
@@ -54,7 +64,7 @@ a
 
 
 header {
-	max-width: 100%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -145,7 +155,6 @@ ul {
 {
 	padding: 40px 30px 0 30px;
 }
-
 /*Recherche*/
 
 .recherche h1
@@ -306,14 +315,15 @@ main
 {
 	display:flex;
 	justify-content:space-between;
+	width: 100%;
 }
-
 
 main h5 a
 {
-	font-size: 15px;
+	font-size: 14px;
 	font-weight:bold;
-	margin-left : 15px;
+	width: 80%;
+	margin-left: 20px;
 }
 
 main h5 a:hover
@@ -324,7 +334,9 @@ main h5 a:hover
 main p
 {
 	font-size: 14px;
-	margin: -15px 0 -15px 15px;
+	margin: -15px 20px -15px 15px;
+	width: 80%;
+	margin-left: 20px;
 }
 
 .fa-star
@@ -339,6 +351,8 @@ main p
 	color: #F2F2F2;
 	margin: 20px 0 15px 15px;
 	padding-bottom: 10px;
+	width: 80%;
+	margin-left: 20px;
 }
 
 .etoilebleue
@@ -352,8 +366,8 @@ main p
 {
 	border-radius: 30px 30px 0 0 ;
 	object-fit: cover;
-    width: 300px;
-    height: 100px;
+    width: 100%;
+    height: 50%;
 	margin-bottom: -15px;
 }
 
@@ -361,8 +375,8 @@ main p
 {
 	background-color: #F2F2F2;
 	border-radius: 30px ;
-	width: 80%;
-    max-width: 1000px;
+    width: 70%;
+	height: 20%;
 	display: flex;
     flex-wrap: wrap;
 	padding: 30px;
@@ -387,11 +401,13 @@ main p
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+	width: 30%;
 }
 
 
 .hebimg {
     width: 200px;
+	height: 100px;
 }
 
 
@@ -403,7 +419,7 @@ main p
 	font-size: 15px;
 }
 
-/*populairev2*/
+/*Populaire*/
 
 aside {
     background-color: #F2F2F2;
@@ -433,7 +449,7 @@ aside {
 }
 
 
-
+/*Activites*/
 
 .activitesimg {
 	display: flex;
@@ -519,6 +535,115 @@ footer
 {
 	background-color: #F2F2F2;
 }
+
+/*
+@media screen and (max-width: 425px) {
+
+	html {
+		max-width: 425px;
+	}
+	main {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+	.heb {
+		width: 100%;
+	}
+	.hebergement {
+		margin: 0;
+		background-color: white;
+		border-radius: 0;
+		padding: 0;
+		width: 90%;
+	}
+	.hebb {
+		align-items: center;
+	}
+	.populaires {
+		margin: 0;
+		border-radius: 0;
+	}
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+	body {
+		background-color: yellow;
+	}
+	
+}
+/*
+@media screen and (min-width:768px) and (max-width: 1024px) {
+
+}
+	
+
+@media screen and (min-width:1440px) {
+	.page {
+		margin: auto;
+	}
+}
+/*
+@media all and (max-width:1024px)
+{
+	.page {
+		width: 90%;
+		margin: auto;
+	}
+	main {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.pop img {
+		width: 215px;
+		height: 130px;
+	}
+	.popu {
+		margin-bottom: 0;
+	}
+	.txthsoleil h5 a {
+        font-size: 20px;
+		max-width: none;
+	}
+	.hebergement h1 {
+		margin: 50px 30px 30px 30px;
+	}
+	.txthsoleil p {
+		font-size: 16px;
+	}
+	.hebergement {
+		padding: 0;
+		margin-top: 30px;
+		width: 822px;
+		margin: 30px auto 0 auto;
+	}
+
+
+
+	.activitesimg {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	
+	.activites img {
+		width: 700px;
+		height: 200px;
+		border-radius: 30px 30px 0 0;
+	}
+	.txtact {
+		margin-top: 30px; 
+	}
+
+	footer {
+		width: 100%;
+		margin-top:20px;
+	}
+	
+}
+
 
 
 
