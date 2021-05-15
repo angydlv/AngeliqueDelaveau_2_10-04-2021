@@ -385,7 +385,7 @@ main p
 
 /*Hebergements*/
 
-.hebergement img
+#hebergement img
 {
 	border-radius: 30px 30px 0 0 ;
 	object-fit: cover;
@@ -395,7 +395,7 @@ main p
 	border: 4px solid white;
 }
 
-.hebergement
+#hebergement
 {
 	background-color: #F2F2F2;
 	border-radius: 30px ;
@@ -487,12 +487,12 @@ aside {
 	flex-wrap: wrap;
 }
 
-.activites img {
+#activites img {
     object-fit: cover;
     width: 280px;
 	border-radius: 30px 30px 0 0;
 }
-.activites h5 {
+#activites h5 {
 	margin-left: 20px;
 	margin: 0;
 	padding: 20px;
@@ -503,7 +503,6 @@ aside {
     border-radius: 30px;
 	margin: auto;
 }
-
 .txtact h5 a
 {
 
@@ -663,14 +662,14 @@ footer {
 		width: 100%;
 		box-shadow: 0px 0px 15px rgb(224 224 224);
 	}
-	.hebergement {
+	#hebergement {
 		margin: auto;
 		background-color: white;
 		border-radius: 0;
 		padding: 0;
 		width: 90%;
 	}
-	.hebergement img {
+	#hebergement img {
 		width: 350px;
 	}
 	.hebb {
@@ -698,14 +697,15 @@ footer {
 	.afficher a {
 		background-color: white;
 	}
-	.activites {
+	#activites {
 		width: 90%;
 		margin: auto;
 	}
-	.activites img {
+	#activites img {
 		height: 150px;
 		width: 350px;
 	}
+	
 	.activitesimg {
 		width: 100%;
 		margin: auto;
@@ -730,7 +730,7 @@ footer {
 		display: flex;
 		flex-direction: column-reverse;
 	}
-	.hebergement {
+	#hebergement {
 		width: 90%;
 		margin: auto;
 		margin-top: 20px;
@@ -738,10 +738,10 @@ footer {
 	.heb {
 		box-shadow: 0px 0px 15px rgb(224 224 224)
 	}
-	.hebergement h5 {
+	#hebergement h5 {
 		margin-bottom: 0;
 	}
-	.hebergement .etoile {
+	#hebergement .etoile {
 		margin-top: 0;
 	}
 	aside {
@@ -798,14 +798,14 @@ footer {
 	.menu {
 		flex-wrap: wrap-reverse;
 	}
-	.activites {
+	#activites {
 		width: 90%;
 		margin: auto;
 	}
 	.activitesimg {
 		justify-content: space-around;
 	}
-	.activites img {
+	#activites img {
 		width: 100%;
 		height: 250px;
 	}
@@ -876,7 +876,7 @@ footer {
 		margin-left: 5px;
 		font-size: 12px;
 	}
-	.activites img {
+	#activites img {
 		width: 250px;
 	}
 	.activitesimg {
@@ -889,12 +889,12 @@ footer {
 		width: 100px;
 		height: 100px;
 	}
-	.hebergement img
+	#hebergement img
     {
     width: 220px;
     height: 90px;
     }
-	.activites h1 {
+	#activites h1 {
 		margin-left: 20px;
 	}
 
@@ -920,14 +920,14 @@ footer {
 	.activitesimg {
 		justify-content: space-between;
 	}
-	.hebergement img {
+	#hebergement img {
 		height: 120px;
 	}
 	.pop img {
 		width: 125px;
 		height: 125px;
 	}
-	.activites img {
+	#activites img {
 		width: 300px;
 	}
 	.footer-content {
